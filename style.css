@@ -1,0 +1,75 @@
+.images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 200px;
+}
+
+.images img {
+    -webkit-box-shadow: 10px 10px 13px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 13px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 13px -11px rgba(0, 0, 0, 0.75);
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position: absolute;
+}
+.images img.active{
+    border:5px solid blue;
+    left: -200px;
+    transform: rotate(-360deg);
+}
+.images img.enemy-active{
+    left: 600px;
+    border: 5px solid blue;
+    transform: rotate(360deg);
+}
+.images img:hover {
+    -webkit-box-shadow: 21px 20px 13px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 21px 20px 13px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 21px 20px 13px -11px rgba(0, 0, 0, 0.75);
+    
+}
+.rock{
+    left: 0px;
+}
+.scissors{
+    left: 400px;
+}
+.paper{
+    left: 200px;
+}
+.rules{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 600px;
+    height: 200px;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.score{
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    top: -70px;
+    right: -100px;
+    font-size: 32px;
+}
+.reload{
+    position: absolute;
+    top: -70px;
+    border: 1px solid #000;
+    border-radius: 24px;
+    font-size: 24px;
+    text-decoration: none;
+    color:#000;
+    padding: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
